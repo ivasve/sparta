@@ -24,7 +24,7 @@ h1 {
 }
 .container {
   display: grid;
-  height: 700px;
+  height: 100%;
   grid-template-columns: 1fr 3fr;
   border: 2px solid black;
 }
@@ -36,20 +36,16 @@ aside {
   padding: 10px;
 }
 .imageCarousel {
-  height: 1200px;
+  display: grid;
+  grid-template-columns: 0.5r 2r 0.5r;
   width: 1000px;
   margin: 20px auto;
+  /* border: 2px solid red; */
 }
 
 .imageCarousel > img {
   width: 100%;
-  height: 50%;
   opacity: 1;
-
-  transition: opacity 0.5s;
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
 }
 
 #prev-button,
@@ -66,12 +62,6 @@ aside {
   font: inherit;
 
   line-height: normal;
-
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-
-  -webkit-appearance: none;
-
   cursor: pointer;
 
   /* colors */
@@ -80,17 +70,6 @@ aside {
 
   /* border */
   border-radius: 50%;
-
-  /* CSS Transitions */
-  transition: background-color 0.5s ease;
-  -webkit-transition: background-color 0.5s ease;
-  -moz-transition: background-color 0.5s ease;
-  -o-transition: background-color 0.5s ease;
-
-  transition: color 0.5s ease;
-  -webkit-transition: color 0.5s ease;
-  -moz-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
 }
 
 #prev-button:hover,

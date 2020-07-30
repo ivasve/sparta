@@ -7,7 +7,7 @@
     <title>Image Carousel</title>
   </head>
 
-  <body>
+  <body class="toggleBackground">
     <header>
       <div class="header">
         <button>CLICK</button>
@@ -15,7 +15,7 @@
       </div>
     </header>
     <div class="container">
-      <aside>
+      <aside class="item">
         Athletic Club Sparta Praha (Czech pronunciation: [ˈaː ˈt͡sɛː ˈsparta
         ˈpraɦa]), commonly known as Sparta Prague, is a Czech football club
         based in Prague. It is the most successful club in the Czech Republic
@@ -32,13 +32,17 @@
         Letná Stadium.
         <a href="https://en.wikipedia.org/wiki/AC_Sparta_Prague">Wikipedia</a>
       </aside>
-      <div class="imageCarousel">
-        <button class="item" id="prev-button"><</button>
-        <img class="item" src="sparta_images/004.jpg" />
+      <div class="item">
+        <button id="prev-button"><</button>
+      </div>
+      <div class="imageCarousel item">
+        <img src="sparta_images/004.jpg" />
         <figcaption>
           <a href="https://sparta.cz/en/more/multimedia/wallpaper"> SPARTA</a>
         </figcaption>
-        <button class="item" id="next-button">></button>
+      </div>
+      <div class="item">
+        <button id="next-button">></button>
       </div>
     </div>
 

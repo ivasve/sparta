@@ -42,6 +42,8 @@ prev.onclick = function () {
 let buttonClick = document.querySelector("button");
 
 buttonClick.addEventListener("click", function () {
+  // Element.classList.toggle("toggleBackground");
+
   if (
     document.body.style.backgroundColor == "black" &&
     document.body.style.color == "white"

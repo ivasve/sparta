@@ -1,0 +1,113 @@
+.header {
+  display: inline-flex;
+  margin-bottom: 5px;
+  flex-direction: row;
+}
+button {
+  display: flex;
+  font-size: x-large;
+  background-color: green;
+  color: white;
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 30 px;
+}
+
+h1 {
+  display: flex;
+  text-align: right;
+  font-size: 3rem;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: 700px;
+}
+.container {
+  display: grid;
+  height: 700px;
+  grid-template-columns: 1fr 3fr;
+  border: 2px solid black;
+}
+
+aside {
+  text-align: justify;
+  font-size: x-large;
+  font-stretch: expanded;
+  padding: 10px;
+}
+.imageCarousel {
+  height: 1200px;
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.imageCarousel > img {
+  width: 100%;
+  height: 50%;
+  opacity: 1;
+
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+}
+
+#prev-button,
+#next-button {
+  display: inline-block;
+  padding: 8px 12px;
+  width: auto;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  outline: none;
+
+  color: inherit;
+  font: inherit;
+
+  line-height: normal;
+
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  -webkit-appearance: none;
+
+  cursor: pointer;
+
+  /* colors */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  /* border */
+  border-radius: 50%;
+
+  /* CSS Transitions */
+  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+
+  transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+}
+
+#prev-button:hover,
+#next-button:hover {
+  color: black;
+  background: white;
+}
+
+/* Positioning */
+#prev-button {
+  position: absolute;
+  top: 25%;
+  margin-left: 0px;
+}
+#next-button {
+  position: absolute;
+  top: 25%;
+  right: 7.5%;
+  margin-right: 10px;
+}
